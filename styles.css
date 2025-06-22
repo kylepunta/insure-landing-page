@@ -10,6 +10,11 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+.nav-menu.mobile.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
 h1,
 h2,
 h3,
@@ -17,4 +22,66 @@ h4,
 h5,
 h6 {
   font-family: "DM Serif Display", sans-serif;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+
+.nav-menu.mobile {
+  background-color: hsl(270, 9%, 17%);
+  color: white;
+  font-weight: 600;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu.mobile > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-top: 3rem;
+}
+
+.nav-menu.mobile button {
+  background: none;
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.8rem 6rem;
+  margin-bottom: 5rem;
+}
+
+.bg-pattern-mobile-nav > svg {
+  width: 100%;
 }
