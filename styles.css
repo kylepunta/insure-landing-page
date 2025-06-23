@@ -8,6 +8,8 @@
 
 body {
   font-family: "Karla", sans-serif;
+  width: 100%;
+  max-width: 100%;
 }
 
 .nav-menu.mobile.hidden {
@@ -41,6 +43,10 @@ a {
 header {
   display: flex;
   flex-direction: column;
+  z-index: 50;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 .hamburger-menu:hover {
@@ -52,6 +58,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem;
+  position: relative;
+  z-index: 50;
+  width: 100%;
 }
 
 .nav-menu.mobile {
@@ -61,6 +70,9 @@ header {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 
 .nav-menu.mobile > ul {
@@ -84,4 +96,171 @@ header {
 
 .bg-pattern-mobile-nav > svg {
   width: 100%;
+}
+
+.nav-links-desktop li {
+  color: hsl(273, 4%, 51%);
+}
+
+.nav-links-desktop button {
+  border: 1px solid hsl(270, 9%, 17%);
+  padding: 0.5rem 1.8rem;
+}
+
+.hero {
+  background-color: hsl(256, 26%, 20%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  position: relative;
+}
+
+.hero-image > img {
+  height: auto;
+  width: 100%;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 6rem;
+  padding-inline: 1.5rem;
+  position: relative;
+}
+
+.hero-heading {
+  font-size: clamp(3rem, 4vw, 4rem);
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.hero-content button {
+  border: 1px solid white;
+  padding: 0.5rem 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.bg-pattern-hero.desktop {
+  display: none;
+  position: absolute;
+}
+
+.bg-pattern-hero.mobile {
+  position: absolute;
+}
+
+.bg-pattern-hero.mobile.left {
+  top: -4px;
+  left: 0;
+}
+
+.bg-pattern-hero.mobile.right {
+  top: 68%;
+  right: 0;
+}
+
+.hero-image.desktop {
+  display: none;
+}
+
+.hero-image-and-content {
+  margin-top: 80px;
+}
+
+@media (min-width: 640px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .nav-links-desktop {
+    display: block;
+  }
+
+  .nav-links-desktop > ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .bg-pattern-hero.mobile {
+    display: none;
+  }
+  .bg-pattern-hero.desktop {
+    display: block;
+  }
+  .hero-image > img {
+    position: absolute;
+  }
+  .hero-image.desktop {
+    display: block;
+  }
+  .hero-image.mobile {
+    display: none;
+  }
+  .bg-pattern-hero.desktop.left {
+    left: 0;
+    top: 68%;
+    height: auto;
+    width: 12%;
+  }
+  .bg-pattern-hero.desktop.right {
+    top: -2px;
+    right: 0;
+    z-index: 1;
+    height: auto;
+    width: 28%;
+  }
+  .hero-image-and-content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 2rem;
+    max-width: 1200px;
+    padding-top: 6rem;
+  }
+  .hero-content {
+    text-align: left;
+    padding-block: 0;
+    align-items: flex-start;
+    width: fit-content;
+  }
+  .hero-border {
+    background-color: white;
+    width: 120px;
+    margin-bottom: 2rem;
+    height: 1px;
+    place-self: flex-start;
+  }
+  .hero-content button {
+    margin-bottom: 9rem;
+  }
+  .hero-heading {
+    line-height: 3.5rem;
+    width: 85%;
+  }
+  .hero-content p {
+    width: 80%;
+  }
+  .top-nav {
+    padding-inline: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
