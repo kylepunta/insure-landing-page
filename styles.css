@@ -374,6 +374,9 @@ footer {
 }
 
 @media (min-width: 640px) {
+  .hero-image > img {
+    width: 95.6%;
+  }
   .nav-menu.mobile {
     display: none;
   }
