@@ -107,6 +107,11 @@ header {
   padding: 0.5rem 1.8rem;
 }
 
+.nav-links-desktop button:hover {
+  color: white;
+  background-color: hsl(270, 9%, 17%);
+}
+
 .hero {
   background-color: hsl(256, 26%, 20%);
   position: relative;
@@ -155,8 +160,11 @@ header {
   margin-top: 1rem;
 }
 
-.hero-content button:hover {
+.hero-content button:hover,
+.find-out-more button:hover {
   cursor: pointer;
+  color: black;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .bg-pattern-hero.desktop {
@@ -306,7 +314,17 @@ footer {
 
 .social-icons {
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+.social-icons svg {
+  color: hsl(273, 4%, 51%);
+}
+
+.social-icons svg:hover {
+  cursor: pointer;
+  color: hsl(256, 26%, 20%);
 }
 
 .footer-logo {
