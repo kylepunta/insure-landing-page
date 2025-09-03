@@ -18,10 +18,10 @@ A landing page for an insurance company, built with **HTML** and **Responsive CS
 ![Insure Landing Page](screenshots/desktop-2.png)
 ![Insure Landing Page](screenshots/desktop-3.png)
 
-!<img src="screenshots/mobile-1.png" alt="Mobile view" width="300">
-!<img src="screenshots/mobile-2.png" alt="Mobile view" width="300">
-!<img src="screenshots/mobile-3.png" alt="Mobile view" width="300">
-!<img src="screenshots/mobile-4.png" alt="Mobile view" width="300">
+<img src="screenshots/mobile-1.png" alt="Mobile view" width="300">
+<img src="screenshots/mobile-2.png" alt="Mobile view" width="300">
+<img src="screenshots/mobile-3.png" alt="Mobile view" width="300">
+<img src="screenshots/mobile-4.png" alt="Mobile view" width="300">
 
 
 ## Installation & Setup
